@@ -8,28 +8,6 @@
 		{
 			"sources": [
 				{
-					"mode": "trigger",
-					"path": "/user/hand/left/input/trigger",
-					"inputs":
-					{
-						"click":
-						{
-							"output": "/actions/main/in/MotionControllerTriggerLeft"
-						}
-					}
-				},
-				{
-					"mode": "trigger",
-					"path": "/user/hand/right/input/trigger",
-					"inputs":
-					{
-						"click":
-						{
-							"output": "/actions/main/in/MotionControllerTriggerRight"
-						}
-					}
-				},
-				{
 					"mode": "button",
 					"path": "/user/hand/left/input/grip",
 					"inputs":
@@ -48,6 +26,28 @@
 						"click":
 						{
 							"output": "/actions/main/in/MotionControllerGripRight"
+						}
+					}
+				},
+				{
+					"mode": "trigger",
+					"path": "/user/hand/left/input/trigger",
+					"inputs":
+					{
+						"click":
+						{
+							"output": "/actions/main/in/MotionControllerTriggerLeft"
+						}
+					}
+				},
+				{
+					"mode": "trigger",
+					"path": "/user/hand/right/input/trigger",
+					"inputs":
+					{
+						"click":
+						{
+							"output": "/actions/main/in/MotionControllerTriggerRight"
 						}
 					}
 				},
@@ -97,23 +97,23 @@
 				},
 				{
 					"mode": "trigger",
-					"path": "/user/hand/left/input/trigger",
-					"inputs":
-					{
-						"pull":
-						{
-							"output": "/actions/main/in/TriggerAxisLeft axis"
-						}
-					}
-				},
-				{
-					"mode": "trigger",
 					"path": "/user/hand/right/input/trigger",
 					"inputs":
 					{
 						"pull":
 						{
-							"output": "/actions/main/in/TriggerAxisRight axis"
+							"output": "/actions/main/in/SteamVRBindings axis"
+						}
+					}
+				},
+				{
+					"mode": "trigger",
+					"path": "/user/hand/left/input/trigger",
+					"inputs":
+					{
+						"pull":
+						{
+							"output": "/actions/main/in/SteamVRBindings axis"
 						}
 					}
 				},
@@ -141,23 +141,23 @@
 				},
 				{
 					"mode": "trigger",
-					"path": "/user/hand/right/input/trigger",
-					"inputs":
-					{
-						"pull":
-						{
-							"output": "/actions/main/in/SteamVRBindings axis"
-						}
-					}
-				},
-				{
-					"mode": "trigger",
 					"path": "/user/hand/left/input/trigger",
 					"inputs":
 					{
 						"pull":
 						{
-							"output": "/actions/main/in/SteamVRBindings axis"
+							"output": "/actions/main/in/TriggerAxisLeft axis"
+						}
+					}
+				},
+				{
+					"mode": "trigger",
+					"path": "/user/hand/right/input/trigger",
+					"inputs":
+					{
+						"pull":
+						{
+							"output": "/actions/main/in/TriggerAxisRight axis"
 						}
 					}
 				}
@@ -195,5 +195,5 @@
 			]
 		}
 	},
-	"description": "AF-19764885"
+	"description": "AF-20979098"
 }
